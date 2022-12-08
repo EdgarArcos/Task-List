@@ -1,10 +1,33 @@
+
 .messageError{
     display: none;
     color: white;
     background-color: red;
+    opacity: 0.5;
     width: 50%;
+    align-items: center;
 }
 
 .messageError.error{
     display: block;
+}
+
+.section-todo-list{
+    display: block;
+    background-image: url("imagenes/portafolio7.png");
+    background-image: center;
+    background-size: 599px;
+    width: 600px;
+    height: 869px;
+    margin: auto;
+}
+
+.titulo{
+    margin-left: 68%;
+    line-height: 250px;
+}
+
+.input-btn{
+    margin-left: 10%;
+    margin-top: 10%;
 }
