@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task List</title>
     <link rel="styleSheet" href="./Style.css">
-    <script src="./app.js"></script> 
+    <script src="./app.js" defer></script> 
 </head>
 <body>
-    
+    <div class="section-todo-list">
+        <h2>To Do List</h2>
+        <div class="input-btn">
+            <input id="input" type="text" value="" required>
+            <button id="taskButton">Add Task</button>
+        </div>
+        <div class="list-tasks">
+            <ul>
+                <li>name of task more content </li>
+            </ul>
+            <p class="messageError">The field is empty...</p>
+        </div>
+        <button class="remove-all">Remove all</button>
+    </div>
 </body>
 </html>

@@ -1,0 +1,10 @@
+.messageError{
+    display: none;
+    color: white;
+    background-color: red;
+    width: 50%;
+}
+
+.messageError.error{
+    display: block;
+}
