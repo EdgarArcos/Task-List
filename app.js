@@ -4,6 +4,8 @@ const message = document.querySelector(".list-tasks")
 let taskButton = document.querySelector("#taskButton")
 let removeall = document.querySelector(".remove-all")
 let tasks = [];
+
+inputs.addEventListener("keydown", enter)
 taskButton.addEventListener("click", addTasks)
 listTasks.addEventListener("click", removeTask)
 removeall.addEventListener("click", remove)
@@ -28,12 +30,20 @@ function addTasks(){
     createHTML();
     inputs.value=""
 } 
+function enter(){
+    let enters = event.keyCode;
+    if (enters == 13) {
+        addTasks()
+    }else if (enters == 38) {
+        
+    }
+}
 
 function createHTML() {
     if (tasks.length > 0){
         tasks.forEach(task =>{
             let li =document.createElement("li")
-            li.innerHTML = `<span task-id=${task.id}>${task.task} </span>`
+            li.innerHTML = `<span task-id=${task.id}>${task.task}</span>`
             listTasks.appendChild(li);
             saveLocalStorage()
         })
@@ -64,7 +74,7 @@ function clearHtml() {
 }
 
 function remove() {
-    console.log("hola");
     tasks= [];
     createHTML()
 }
+

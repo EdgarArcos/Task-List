@@ -1,4 +1,11 @@
-
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.titulo{
+    text-align: center;
+    line-height: 260px;
+    font-size: 40px;
+}
 .messageError{
     display: none;
     color: white;
@@ -6,10 +13,39 @@
     opacity: 0.5;
     width: 50%;
     align-items: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .messageError.error{
     display: block;
+    margin-left: 8%;
+}
+
+.input-btn{
+    text-align: center;
+    margin-top: -20%;
+}
+input{
+    width: 70%;
+    border-style: dashed;
+}
+input:hover{
+    width: 72%;
+    border-style: double;
+}
+
+#taskButton{
+    background-color: white;
+    border-style: dashed;
+}
+#taskButton:hover{
+    background-color:rgb(255, 255, 255);
+    border-style: double;
+}
+#taskButton:active{
+    background-color:rgb(0, 0, 0);
+    color: white;
+    border-style: double;
 }
 
 .section-todo-list{
@@ -22,12 +58,36 @@
     margin: auto;
 }
 
-.titulo{
-    margin-left: 68%;
-    line-height: 250px;
+.list-tasks{
+    margin-left: 5%;
+    font-size: 18px;
 }
 
-.input-btn{
+.list-tasks li{
+    list-style: none;
+}
+
+.list-tasks li:hover{
+    margin-left: 1%;
+    text-decoration:line-through red;
+    font-size: 20px;
+}
+
+.remove-all{
     margin-left: 10%;
-    margin-top: 10%;
+    background-color:white;
+    border-style: dashed;
+}
+
+.remove-all:hover{
+    margin-left: 10%;
+    background-color:rgb(255, 255, 255);
+    border-style: double;
+    border-color: red;
+}
+.remove-all:active{
+    margin-left: 10%;
+    background-color:rgb(0, 0, 0);
+    color: white;
+    border-style: double;
 }
